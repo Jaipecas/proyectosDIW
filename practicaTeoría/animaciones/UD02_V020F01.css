@@ -1,0 +1,55 @@
+body {
+    background-color: #333333;
+    color: #bbbaaa
+}
+
+p {
+    font-size: 2.5em;
+}
+
+/*
+.hombre:before {
+    content: "Sr. ";
+    color: blue;
+    display: block;
+}
+
+.mujer:before {
+    content: "Sra. ";
+    color: green;
+}
+*/
+
+.animacion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    border: 10px solid #aaa;
+    position: relative;
+}
+
+.animacion:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: red;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+    animation: vueltas 2s linear infinite;
+}
+
+@keyframes vueltas {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
