@@ -1,0 +1,32 @@
+
+/* cambia el tamaño de esta fuente para ver como
+el layout cambiane función del mismo */
+html {  font-size: 1em; }
+
+body 
+{ 
+    background-color: #333333; 
+    color: #bbbaaa  
+}
+
+#envoltorio
+{
+    width: 40rem;
+    position: relative;
+}
+
+#personajes 
+{
+    width: 10rem;
+    position: absolute;
+    top: 6rem;
+    padding-left: 0.5rem;
+    background-color: chocolate;
+}
+
+#historia 
+{
+    margin-left: 12rem;
+    padding: 0.5rem;
+    background-color: green;
+}
